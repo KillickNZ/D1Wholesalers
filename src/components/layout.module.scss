@@ -1,0 +1,105 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.content {
+    flex-grow: 1;
+    width: 80%;
+    text-align: center;
+    margin: 2vw auto;
+}
+
+.ItemContainer {
+    width: 250px;
+    height: 498px;
+    margin: 3vw 0vw;
+    padding-bottom: 2rem;
+    // background-color: $dutch-white;
+    border: 1px solid $hunter-green;
+    border-radius: 12px;
+
+    box-shadow: $moss-green 3px 5px 5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ItemContainer:hover {
+    box-shadow: $moss-green 3px 5px 10px;
+    top: 2px;
+    left: 3px;
+}
+
+.ItemContainer img {
+    width: 100%;
+}
+
+
+// .ItemContainer p {
+//     margin: 1rem;
+//     position: relative;
+//     height: 4.2em;
+//     overflow: ellipses;
+// }
+
+// .ItemContainer p:after {
+//   content: "";
+//   text-align: left;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   width: 50%;
+//   height: 1.2em;
+// //   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+// } 
+
+.ItemContainer h3 {
+    // margin-top: 1rem;
+}
+
+.techContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+}
+
+.tech {
+    margin: .1rem auto;
+    padding: .3rem;
+    border: 2px solid $maroon;
+    border-radius: 30px;
+}
+
+.backButton {
+    background-color: $dutch-white;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.backButton:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.backButton:active {
+    border: 1px solid $hunter-green;
+}

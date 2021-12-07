@@ -1,0 +1,123 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+.header {
+    padding: 1rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-image: url("./images/seb_dreamtrack.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $dutch-white;
+    height: 91vh;
+
+    border-bottom: 2vh solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, $hunter-green 0%, $british-racing-green 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, $hunter-green 0%, $british-racing-green 100%);
+    border-image: linear-gradient(to right, $hunter-green 0%, $british-racing-green 100%);
+    border-image-slice: 1;
+}
+
+.title {
+    color: $dutch-white;
+    font-size: 3rem;
+    text-decoration: none;
+    
+}
+
+.logoText {
+    margin: 1rem 2rem;
+    color: $dutch-white;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+.logoAccent {
+    color: $orange;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 20vw;
+    height: 20vh;
+    margin-left: 3vw;
+}
+
+.title:Hover {
+    color: $orange;
+}
+
+.navClass {
+    display: flex;
+    justify-content: flex-end;
+    
+    text-align: end;
+    margin: .5rem 1rem;
+}
+
+.nav-list {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    color: $dutch-white;
+    font-size: 30px;
+    margin: 1rem 2rem;
+    text-decoration: none;
+}
+
+.nav-item:Hover {
+    color: $orange;
+}
+
+.active-nav-item {
+    color: $orange;
+    text-decoration: none;
+}
+
+.active-nav-item:Hover {
+    color: $orange;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        background-position: 16% 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        background-position: 9% 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logoText {
+       font-size: 1.5rem;
+       line-height: 1.3rem;
+       margin: .5rem 1rem;
+    }
+
+    .navClass {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        margin: .2rem;
+    }
+}

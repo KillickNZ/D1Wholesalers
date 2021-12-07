@@ -1,0 +1,70 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+.posts {
+    list-style-type: none;
+    margin: 0;
+}
+
+.post {
+    margin: 2rem 0;
+    width: 80vw;
+
+    a {
+        background-color: $dutch-white;
+        color: $british-racing-green;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 1rem;
+    }
+    a:hover {
+        color: $orange;
+        background-color: $dutch-white;
+        opacity: .8;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+    p {
+        color: black;
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
+
+.boldUnderline {
+    border-bottom: .1rem solid $dutch-white;
+    box-shadow: 0 -.4rem 0 $dutch-white inset;
+}
+
+.assetImage {
+    border-radius: 20px;
+}
+
+.blogHeroImage {
+    border-radius: 20px;
+    margin: 5rem auto;
+}
+
+.imageDescription {
+    font-size: .8rem;
+}
+
+.assetContainer {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blogHeadingContainer {
+    margin: 5rem auto 0 auto;
+}

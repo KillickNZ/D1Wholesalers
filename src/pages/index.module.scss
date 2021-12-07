@@ -1,0 +1,25 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+* {
+    color: $british-racing-green;
+}
+
+.portfolioItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolioItems {
+        flex-direction: column;
+    }
+}

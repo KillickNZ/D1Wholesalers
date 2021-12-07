@@ -1,0 +1,64 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    border-top: $dutch-white 1px solid;
+    height: 20vh;
+    background-color: $dutch-white;
+}
+
+.centeredContent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+    margin: 0px auto;
+    padding-top: 1rem;
+ 
+}
+
+.centeredContent, li {
+    list-style-type: none;
+    margin-top: -0.5rem;
+}
+
+.centeredContent, a {
+    text-decoration: none;
+}
+.centeredContent, a:hover {
+    color:$orange
+}
+
+.centeredContent h3 {
+    color: $british-racing-green;
+    font-size: 1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerIcons {
+    width: 50px;
+    margin: 1vw;
+    color: $british-racing-green;
+}
+
+.iconSVG {
+    fill: $british-racing-green;
+}
+
+.iconSVG:hover {
+    fill: $hunter-green;
+}

@@ -1,0 +1,70 @@
+$british-racing-green: #274125;
+$hunter-green: #375B34;
+$moss-green: #909C6E;
+$dutch-white: #EFDFBB;
+$mustard: #F7B538;
+$orange: #DB7C26;
+$maroon: #780116;
+
+.portfolioContainer {
+    margin: 4rem;
+    // height: 50vh;
+    background-color: $dutch-white;
+    border: 1px solid $dutch-white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    // flex-direction: column;
+    font-size: 1rem;
+}
+
+.goBack {
+    margin: 2rem;
+    padding: .4rem;
+    background-color: $dutch-white;
+    border: 1px solid $dutch-white;
+    border-radius: 20px;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 2rem;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.portfolioImage {
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.portfolioHeader {
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolioContainer {
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+    }
+
+    .portfolioImage {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
